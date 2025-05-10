@@ -3,6 +3,10 @@
 Developed by Fábio Ferreira ([@fabiomlferreira](https://x.com/fabiomlferreira)).
 Check out [dotcursorrules.com](https://dotcursorrules.com/) for more AI development enhancements.
 
+<a href="https://glama.ai/mcp/servers/@noopstudios/interactive-feedback-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@noopstudios/interactive-feedback-mcp/badge" alt="Interactive Feedback MCP server" />
+</a>
+
 Simple [MCP Server](https://modelcontextprotocol.io/) to enable a human-in-the-loop workflow in AI-assisted development tools like [Cursor](https://www.cursor.com). This server allows you to run commands, view their output, and provide textual feedback directly to the AI. It is also compatible with [Cline](https://cline.bot) and [Windsurf](https://windsurf.com).
 
 ![Interactive Feedback UI - Main View](https://github.com/noopstudios/interactive-feedback-mcp/blob/main/.github/interactive_feedback_1.jpg?raw=true)
