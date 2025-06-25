@@ -205,6 +205,19 @@ class FeedbackTextEdit(QTextEdit):
                 parent._submit_feedback()
         else:
             super().keyPressEvent(event)
+            
+    def insertFromMimeData(self, source):
+        """Override to handle paste operations safely, especially with emoji"""
+        try:
+            if source.hasText():
+                text = source.text()
+                cursor = self.textCursor()
+                cursor.insertText(text)
+            else:
+                super().insertFromMimeData(source)
+        except Exception:
+            # If paste fails, silently ignore to prevent crash
+            pass
 
 class LogSignals(QObject):
     append_log = Signal(str)
